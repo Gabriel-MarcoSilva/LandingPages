@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #7d1a0c;
+    width:100vw;
+    height:150vh;
+    overflow-X: hidden;
+}
+
+nav{
+    background: #240f03;
+    color:#4b2409;
+    width: 100%;
+    height: 10vh;
+    position:fixed;
+    top:0;
+    z-index:1;
+}
+
+.container-checkbox{
+    width: 20px;
+    padding: 20px;
+    position:absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+#mode-dark{
+    display:none;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.check-sun{
+    color: #fff;
+}
+
+.check-moon{
+    display: none;
+    color: #000;
+}
+
+.container-body{
+    margin-top: 70px;
+    width:80vw;
+    background:#fff;
+    height:120vh;
+    border-radius: 10px;
+    box-shadow: 0px 5px 50px #b32900;
+    padding: 10px;
+}
+
+.fixo{
+    color: #000;
+    margin: 20px auto;
+    font-size:20pt;
+    display: flex;
+    justify-content: center;
+  
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+    background: #6c1305;
+}
+
+.block{
+    width:100%;
+    height:50vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.block-info{
+    padding:10px;
+    min-width: 45%;
+}
+
+.container-photo{
+    border: 1px solid #000;
+    box-shadow: 2px 2px 25px #000;
+    padding: 10px;
+    height:90%;
+    border-radius: 5px;
+}
+
+.photo{
+    background:green;
+}
+
+hr{
+    position: absolute;
+    margin: 20px 0;
+    left:0;
+    width:100vw;
+    height:5vh;
+    background: #6c1305;
+    border: none;
+}

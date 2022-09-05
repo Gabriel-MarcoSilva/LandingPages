@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100vw;
+    align-items:center;
+    height: 150vh;
+}
+
+.container-body{
+    width: 95vw;
+    height:300vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contianer-info{
+    width: 100%;
+    height: 100%;
+    background: rgb(44, 44, 44);
+}
+
+.logo{
+    margin: auto;
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(145, 233, 233);
+    text-transform: uppercase;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+.logo hr{
+    width: 100%;
+}
+
+.logo h1{
+    font-size: 30pt;
+}
+
+.container-image{
+    width: 100%;   
+}
+
+.container-image img{
+    width: 95vw;
+}
+
+.logo span{
+    font-size: 9pt;
+}
+
+.container-dados{
+    width: 40vw;
+    height: 70vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    color: rgb(145, 233, 233);
+    margin-left: 10vw;
+    justify-content: space-around;
+}
+
+.contrast{
+    background:rgb(34, 34, 34);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+}
+
+.contrast h1{
+    margin-left: 200px;
+    font-size: 20pt;
+}
+
+.contrast span{
+    margin-left: 20px;
+    font-size: 25pt;
+    color: orange;
+    font-weight: bold;
+}
+
+footer{
+    height: 12vh;
+    width: 100%;
+    background: gray;
+}
+
+.container-form{
+    position: absolute;
+    z-index:1;
+    height: 210vh;
+    right: 10vw;
+    top: 20vh;
+    width: 25vw;
+    padding: 35px;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form h1{
+    font-size: 20pt;
+    font-family: 'Lexend Exa', sans-serif;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.container-form h3{
+    font-weight:normal;
+    font-size: 15pt;
+    margin-bottom: 60px;
+
+}
+
+.info-hotel{
+    background: gray;
+    font-family: Arial sans-serif;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.container-fivestar{
+    height: 20vw;
+    width: 20vw;
+    margin-top: 20px;
+}
+
+.fivestar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid gold;
+}
+
+form{
+    margin-top: 20vh;
+    height: 50vh;
+    width:100%;
+    display:grid;
+    grid-gap:20px;
+}
+
+form label{
+    width: 100%;
+}
+
+.input{
+    width:100%;
+    height: 6vh;
+    border-radius: 2px;
+    padding: 5px;
+    border: 1px solid orange;
+}
+
+form label button{
+    background: orange;
+    padding: 10px;
+    border:none;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    height: 7vh;
+    margin-top: 20px;
+}
+
+form p{
+    font-size:8pt;
+}
+
+form span{
+    text-transform: uppercase;
+    color: rgb(145, 233, 233);
+    margin: auto;
+}
+
+.animar{
+    animation: motion 2s infinite;
+}
+
+::-webkit-scrollbar{
+    height: 3px;
+    width: 3px;
+    background: transparent;
+}
+
+@keyframes motion{
+    0%{
+        transform: translateX(0);
+    }
+    40%{
+        transform: translateX(50px);
+    }
+    70%{
+        transform: translateX(-10);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

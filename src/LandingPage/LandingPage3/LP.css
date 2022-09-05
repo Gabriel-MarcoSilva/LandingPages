@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+main{
+    background: #e8c382;
+    width:100vw;
+    height:150vh;
+    color:#7d1a0c;
+}
+
+::-webkit-scrollbar{
+    width:3px;
+    height:3px;
+    background: transparent;
+}
+
+.container-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height:100vh;
+}
+
+.info-landingPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-image{
+    margin: 5px 0;
+    background: #340a0b;
+    width: 35vw;
+    height:35vw;
+}
+
+.container-form{
+    background:#7d1a0c;
+    padding:30px;
+    width:100%;
+    height:80%;
+    max-width: 25%;
+    border-radius:10px;
+    color:#fff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cabecalho{
+    margin: 15px 0;
+}
+
+.cabecalho h3{
+    font-weight: bold;
+}
+
+.cabecalho h4{
+    font-weight: normal;
+}
+
+.invisible{
+    display: none
+}
+
+.p_input{
+    width:100%;
+    margin: 5px 0;
+    height: 4vh;
+}
+
+.p_check{
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p_check:hover{
+    font-weight: bold;
+}
+
+.p_check p{
+    margin-left: 5px;
+}
+
+.container-button{
+    width:100%;
+    height:5vh;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.container-button button{
+    width: 80%;
+    background:#b32900;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #340a0b;
+    height: 50vh;
+}

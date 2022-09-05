@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url('https://th.bing.com/th/id/R.1fd00f1028b0cc00c3cc770826fd72aa?rik=InvtzMt126aKHQ&pid=ImgRaw&r=0');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container-body{
+    width: 90vw;
+    height: 90vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: row;
+}
+
+.container-info{
+    width:70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-info h1{
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    text-transform: uppercase;
+    font-size: 30pt;
+    margin-bottom: 20px;
+}
+
+.container-form{
+    background: brown;
+    border-radius: 10px;
+    width: 20vw;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-form form{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form h1{
+    color: #fff;
+    text-align: center;
+    font-family: Roboto sans-serif;
+}
+
+.apontar{
+    animation: balanco 2s infinite;
+}
+
+.container-form form label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.container-form form label input{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 7vh;
+}
+
+.container-form form label button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: auto;
+    background-color: goldenrod;
+    color:#fff;
+}
+
+img{
+    width: 40vw;
+    height: 60vh;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 20px #000;
+    margin-top: -120px;
+}
+
+hr{
+    width: 70vw;
+    position:absolute;
+    height: 50px;
+    background: #000;
+    border: none;
+    margin-top: 250px;
+}
+
+.imagem{
+    position: absolute;
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagem h2{
+    font-size: 50pt;
+    text-align: center;
+    color:#fff;
+    margin: auto;
+    text-shadow: 1px 1px 3px #000;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    margin-top:-10px;
+    background: #000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px yellow;
+}
+
+.airplane, .airplane2, .airplane3, .airplane4{
+    color:rgb(204, 137, 11);
+    width: 100px;
+    height: 50px;
+    animation: motion ease-out infinite 5s;
+    position: absolute;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.airplane2{
+    animation: motion2 ease-out infinite 6s;
+    margin-left: -20px;
+}
+
+.airplane3{
+    animation: motion3 ease-out infinite 3s;
+    margin-top: -20px;
+}
+
+.airplane4{
+    animation: motion4 ease-out infinite 3s;
+    margin-top: -120px;
+}
+
+@keyframes motion{
+    0%{
+        transform: translate(0,0px);
+    }
+    30%{
+        transform: translate(80px,20px);
+    }
+    55%{
+        transform: translate(120px,-20px);
+    }
+    100%{
+        transform: translate(0,0px);
+    }
+}
+
+@keyframes motion2{
+    0%{
+        transform: translate(0,0px);
+    }
+    30%{
+        transform: translate(-80px,20px);
+    }
+    55%{
+        transform: translate(-120px,-20px);
+    }
+    100%{
+        transform: translate(0,0px);
+    }
+}
+
+@keyframes motion3{
+    0%{
+        transform: translate(0,0px);
+    }
+    30%{
+        transform: translate(100px,0px);
+    }
+    55%{
+        transform: translate(200px,-10px);
+    }
+    100%{
+        transform: translate(0,0px);
+    }
+}
+
+@keyframes motion4{
+    0%{
+        transform: translate(20,0px);
+    }
+    30%{
+        transform: translate(0px,100px);
+    }
+    55%{
+        transform: translate(20px,-10px);
+    }
+    100%{
+        transform: translate(0,0px);
+    }
+}
+
+@keyframes balanco{
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}

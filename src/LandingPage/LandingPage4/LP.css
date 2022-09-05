@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 5px;
+}
+
+nav ul li{
+    margin: 3px 5vw;
+    margin-right: 20vw;
+}
+
+nav ul select {
+    margin: 0 5px;
+    border: none;
+    padding: 5px;
+    background-color: #000;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 100vw;
+    margin: 10vh 0;
+}
+
+.initial{
+    margin-top: 10vh;
+}
+
+.container-content {
+    height: 80vh;
+    width: 100vw;
+    background: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+
+.sale-content{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+}
+
+.sale-content h1{
+    font-size: 55pt;
+}
+
+.sale-content h2{
+    font-size:  35pt;
+    font-weight: normal;
+}
+
+.sale-content button{
+    background: #000;
+    height: 8vh;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sale-content button:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.sale-content span{
+    margin: 20px 0;
+    text-transform: none;
+}
+.image-content{
+    width: 60%;
+    padding: 20px;
+    height: 100%;
+    background-color: red ;
+}
+
+.container-info {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bgbrown{
+    background: brown;
+}
+
+.bgwhite{
+    background: #fff;
+}
+
+.container-info div{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
+
+
+.info-container-info{
+    max-width: 200px;
+    margin-left: 10px;
+    color:#fff;
+}
+
+.info-container-info h1{
+    text-transform: uppercase;
+}
+
+.publicidade{
+    width: 150px;
+    color:#000;
+    height: 100px;
+    background: #000;
+    border-radius: 5px;
+}

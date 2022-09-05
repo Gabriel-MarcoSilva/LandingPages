@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .App{
+    width: 100vw;
+    height:100vh;
+    padding:50px;
+    background:linear-gradient(#66ffff,#ff0099);
+    justify-content:"center";
+    align-items:"center";
+    display: flex;
+    flex-direction:"colummn";
+  }
+  
+  #section-body{
+    background-color:rgba(255,255,255, 0.5);
+    width:80vw;
+    height:85vh;
+    margin:0 auto;
+    box-shadow:0px 20px 50px #b380cc;
+    border-radius: 5px;
+  }
+  
+  #items-nav{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    padding:10px;
+    background: #8cbfe6;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  #items-nav li{
+    margin: 0 20px;
+    list-style-type: none;
+  }
+  
+  #logo{
+    position: relative;
+    right: -35vw;
+    width: 200px;
+  }
+  
+  #items-nav li a{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .click:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px rgba(0,0,0,0.5);
+    position:relative;
+    border-top: 5px solid rgba(255,255,255,0.5);
+    top: -5px;
+    transition: 1;
+  }
+  
+  #container-content{
+   display: flex;
+   flex-direction: row;
+   padding: 25px;
+   justify-content: center;
+  }
+  
+  .box{
+    border-radius: 10px;
+    background: rgba(217, 64, 179, 0.2);
+    width: 45vw;
+    height: 65vh;
+    padding: 5vh;
+    margin: 20px;
+  }
+  
+  .box img{
+    margin: 0 auto;
+    background:#fff;
+    border-radius: 5px;
+  }
+  
+  #form1{
+    display: flex;
+    flex-direction: column;
+    padding:2px;
+    height:50vh;    
+    background: linear-gradient(rgba(255,255,255,0.3), transparent);
+    border-radius: 5px;
+    justify-content: space-between
+  }
+  
+  #form1 label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:5px 0px;
+    align-items: center;
+  }
+  
+  #dif{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .p_input{
+    border-radius: 5px;
+    width: 70%;
+    height: 5vh;
+    border:none;
+    padding:2px;
+  }
+  
+  #form1 button{
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    width: 10vw;
+    cursor: pointer;
+    background:#d940b3;
+  }
+  
+  #form1 button:hover{
+    background:  #ff0099;
+    transition: 1s;
+    color: #fff;
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    /*background: #fff;*/
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .flutter{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 80vh;
+    left: 91vw;
+    position: absolute;
+    cursor:pointer;
+    background-color: transparent;
+    animation: anima 10s ease-out;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0,0.1),
+                15px 20px 20px rgba(0,0,0,0.05),
+                inset -10px -10px 15px rgba(255,255,255,0.9);
+  }
+  
+  .flutter2{
+    top: 75vh;
+    left: 85vw;
+    width: 80px;
+    height: 80px;
+    animation: anima2 10s ease-out;
+  }
+  
+  .flutter3{
+    top: 75vh;
+    left: 0vw;
+    width: 100px;
+    height: 100px;
+    animation: anima 10s ease-out;
+  }
+  
+  .flutter4{
+    top: 75vh;
+    left: 10vw;
+    width: 50px;
+    height: 50px;
+    animation: anima 10s ease-out;
+  }
+  
+  .flutter::before,
+  .flutter4::before{
+    content:'';
+    position : absolute;
+    top:25px;
+    left:30px;
+    background:#fff;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+  }
+  
+  .flutter4::before{
+    top:10px;
+    left:10px;
+  }
+  
+  #container-color{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .color{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  #color1{
+    background:blue;
+  }
+  #color2{
+    background:green;
+  }
+  #color3{
+    background: pink;
+  }
+  #color4{
+    background: white;
+  }
+  
+  @keyframes anima{
+    0%{
+        transform: translateY(-500px);
+    }
+    
+    75%{
+        transform: translateY(30px);
+    }
+  }
+  
+  @keyframes anima2{
+    0%{
+        transform: translateY(-500px);
+    }
+    45%{
+        transform: translateY(20px);
+    }
+    65%{
+        transform: translate(-20px, 0);
+    }
+  }
+  
+  @keyframes animati{
+    0%{
+        transform: scale(200px);
+    }
+    30%{
+        transform: scale(300px);
+    }
+    40%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(0);
+    }
+  }
+  
+  .container-invi{
+    background: rgba(255,255,255,0.5);
+    width: 30px;
+    height: 30px;
+    padding:5px;
+    border-radius:50%;
+    position: absolute;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    bottom:9vh;
+    right: 11vw;
+  }
+  
+  .invi{
+    font-family: 'Rubik Marker Hatch', cursive;
+  }
